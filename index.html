@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <div class="weather-situation">
+          <img src="./assets/cloud.svg" alt="Ícone de duas nuvens" />
+        </div>
+
+        <div class="temp-container">
+          <span class="main-temp">18<sup>°C</sup></span>
+          <p class="description">Nublado</p>
+        </div>
+
+        <div class="location">
+          <img src="./assets/pin-icon.svg" alt="ícone de localização" />
+          <p class="place">São Paulo, SP</p>
+        </div>
+      </main>
+
+      <div id="container">
+        <div class="box air-quality">
+          <h2 class="title">
+            <img src="./assets/leaf-icon.svg" alt="Ícone de uma folha" />
+            Qualidade do ar
+          </h2>
+
+          <div class="container">
+            <span class="air-condition">Boa</span>
+            <span class="number">21</span>
+          </div>
+
+          <div class="air-info">
+            <div>
+              <span class="element-number">12.9</span>
+              <p class="element">PM2.5</p>
+            </div>
+            <div>
+              <span class="element-number">12.9</span>
+              <p class="element">PM10</p>
+            </div>
+            <div>
+              <span class="element-number">2.1</span>
+              <p class="element">SO<sub>2</sub></p>
+            </div>
+            <div>
+              <span class="element-number">1.4</span>
+              <p class="element">NO<sub>2</sub></p>
+            </div>
+            <div>
+              <span class="element-number">21.2</span>
+              <p class="element">O<sub>3</sub></p>
+            </div>
+            <div>
+              <span class="element-number">0.7</span>
+              <p class="element">CO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box suntime">
+          <h2 class="title">
+            <img src="./assets/suntime-icon.svg" alt="Ícone de um sol com um relógio dentro" />
+            Horário do sol
+          </h2>
+
+          <img src="./assets/suntime-img.svg" alt="" />
+        </div>
+
+        <div class="box weather-info">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/wind-icon.svg" alt="Ícone de vento" />
+              <div class="content wind">
+                <h3>Vento</h3>
+                <p class="info">17 <span>km/h</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/humidity-icon.svg" alt="Ícone de humidade" />
+              <div class="content humidity">
+                <h3>Humidade</h3>
+                <p class="info">31 <span>%</span></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/rain-icon.svg" alt="ícone de chuva" />
+              <div class="content">
+                <h3>Chuva</h3>
+                <p class="info">10 <span>%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>Por favor, note que algumas informações, como qualidade do ar, horário do sol e chances de chuva, são meramente ilustrativas devido à falta de dados disponíveis.</p>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
